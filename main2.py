@@ -47,7 +47,7 @@ bonds_value10000000 = pd.merge(company_bonds_value10000000, party_bonds_value100
 combined_electoral_bonds_data = pd.concat([bonds_value1000, bonds_value10000, bonds_value100000, bonds_value1000000, bonds_value10000000])
 
 
-combined_electoral_bonds_data = combined_electoral_bonds_data.drop(['level_0', 'Prefix_y', 'index_y', 'Denominations_y'], axis=1)
+combined_electoral_bonds_data = combined_electoral_bonds_data.drop(['level_0', 'Prefix_y', 'index_y', 'Denominations_y'], axis=1) #idk what's going on 
 
 combined_electoral_bonds_data.rename(columns = {'index_x':'index', 'Prefix_x':'Prefix',
                               'Denominations_x':'Denominations'}, inplace = True)
@@ -80,5 +80,5 @@ combined_electoral_bonds_data.to_csv('combined_electoral_bonds_data.csv')
 # expired_bonds.to_csv('expired_bonds.csv')
 
 
-
+# Hi this is a pull request
 
